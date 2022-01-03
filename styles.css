@@ -1,0 +1,96 @@
+/*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+  height: 8vh;
+  display: grid;  
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #f9fbff;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+table thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+table td {
+    padding: 1rem 2rem;
+  }
+  table a {
+    text-decoration: none;
+    color: #2962ff;
+  }
+  table .status {
+    border-radius: 0.2rem;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    text-align: center;
+  }
+  table .status-running {
+    background-color: #fff0c2;
+    color: #a68b00;
+  }
+  table .status-finished {
+    background-color: #c8e6c9;
+    color: #388e3c;
+  }
+  table .status-unpaid {
+    background-color: #ffcdd2;
+    color: #c62828;
+  }
+  table .amount {
+    text-align: right;
+  }
+  table tr:nth-child(even) {
+    background-color: #f4f6fb;
+  }
+
+  .app-header__logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  .app-header__logo-container--clickable {
+    cursor: pointer;
+  }
+  
+  
+  .first-time-flow__wrapper .app-header__metafox-logo {
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 575px) {
+    .first-time-flow__wrapper .app-header__metafox-logo {
+      margin-bottom: 0;
+    }
+  }
+  
+  .app-header__metafox-logo--icon {
+    height: 32px;
+  }
+  @media screen and (min-width: 576px) {
+    .app-header__metafox-logo--icon {
+      display: none;
+    }
+  }
